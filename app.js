@@ -34,7 +34,7 @@ app.post("/",function(req,res){
     }
 
     const jsondata=JSON.stringify(data);
-    const url="https://us14.api.mailchimp.com/3.0/lists/40ab1e45a4c";
+    const url="https://us14.api.mailchimp.com/3.0/lists/40ab1e45a4";
 
     //IMP SYNTAX FOR https.request(url,options,callback function)
     //auth --- authentication=apikey
@@ -42,7 +42,7 @@ app.post("/",function(req,res){
 
     const options={
         method:"POST",
-        auth:"shaurya:801559fee3f386576275219b72cdabb7-us14"
+        auth:"shaurya:e70e096f07da7f4cfa814f5be22f3599-us14"
     }
 
     //https request
@@ -77,25 +77,16 @@ app.post("/failure.html",function(req,res){
 
 
 
-app.listen(process.env.PORT || 3000,function(){
+app.listen(3000,function(){
     console.log("server starts at localhost 3000");
     
 });
 
-// const myModal = document.getElementById('myModal')
-// const myInput = document.getElementById('myInput')
 
-// myModal.addEventListener("click", () => {
-//   myInput.focus()
-// })
-
-// document.querySelector("#launchbtn").addEventListener("click",function(){
-//     alert("hey")
-// })
 
 
 //api key
-// 801559fee3f386576275219b72cdabb7-us14
+//e70e096f07da7f4cfa814f5be22f3599-us14
 
 //list id
 // 40ab1e45a4
